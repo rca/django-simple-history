@@ -213,8 +213,7 @@ class HistoricalRecords(object):
         return {
             'history_id': models.AutoField(primary_key=True),
             'history_date': models.DateTimeField(),
-            'history_change_reason': models.CharField(max_length=100,
-                                                      null=True),
+            'history_change_reason': models.TextField(null=True),
             'history_user': models.ForeignKey(
                 user_model, null=True, related_name=self.user_related_name,
                 on_delete=models.SET_NULL),
