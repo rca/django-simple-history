@@ -5,7 +5,7 @@ tests_require = [
     'Django>=1.6', 'WebTest==2.0.24', 'django-webtest==1.8.0', 'mock==1.0.1']
 
 setup(
-    name='django-simple-history',
+    name='rca-django-simple-history',
     version=simple_history.__version__,
     description='Store model history and view/revert changes from admin site.',
     long_description='\n'.join((
